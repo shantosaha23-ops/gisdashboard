@@ -1,0 +1,1124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>pbs_info.csv</name>
+	<visibility>0</visibility>
+	<open>1</open>
+	<atom:link rel="app" href="https://www.google.com/earth/about/versions/#earth-pro" title="Google Earth Pro 7.3.7.1155"></atom:link>
+	<Schema name="pbs_info" id="S_pbs_info_SSSSSSSSSDDSSSSSS">
+		<SimpleField type="string" name="Category">
+			<displayName>&lt;b&gt;Category&lt;/b&gt;</displayName>
+		</SimpleField>
+		<SimpleField type="string" name="Name">
+			<displayName>&lt;b&gt;Name&lt;/b&gt;</displayName>
+		</SimpleField>
+		<SimpleField type="string" name="PBS_Name">
+			<displayName>&lt;b&gt;PBS Name&lt;/b&gt;</displayName>
+		</SimpleField>
+		<SimpleField type="string" name="Source_Grid">
+			<displayName>&lt;b&gt;Source Grid&lt;/b&gt;</displayName>
+		</SimpleField>
+		<SimpleField type="string" name="Capacity__MVA_">
+			<displayName>&lt;b&gt;Capacity (MVA)&lt;/b&gt;</displayName>
+		</SimpleField>
+		<SimpleField type="string" name="Peak_Load__MW_">
+			<displayName>&lt;b&gt;Peak Load (MW)&lt;/b&gt;</displayName>
+		</SimpleField>
+		<SimpleField type="string" name="Voltage_Level">
+			<displayName>&lt;b&gt;Voltage Level&lt;/b&gt;</displayName>
+		</SimpleField>
+		<SimpleField type="string" name="Status">
+			<displayName>&lt;b&gt;Status&lt;/b&gt;</displayName>
+		</SimpleField>
+		<SimpleField type="string" name="Type">
+			<displayName>&lt;b&gt;Type&lt;/b&gt;</displayName>
+		</SimpleField>
+		<SimpleField type="double" name="Longitude">
+			<displayName>&lt;b&gt;Longitude&lt;/b&gt;</displayName>
+		</SimpleField>
+		<SimpleField type="double" name="Latitude">
+			<displayName>&lt;b&gt;Latitude&lt;/b&gt;</displayName>
+		</SimpleField>
+		<SimpleField type="string" name="District">
+			<displayName>&lt;b&gt;District&lt;/b&gt;</displayName>
+		</SimpleField>
+		<SimpleField type="string" name="Upazila">
+			<displayName>&lt;b&gt;Upazila&lt;/b&gt;</displayName>
+		</SimpleField>
+		<SimpleField type="string" name="Address">
+			<displayName>&lt;b&gt;Address&lt;/b&gt;</displayName>
+		</SimpleField>
+		<SimpleField type="string" name="Energized_Date">
+			<displayName>&lt;b&gt;Energized Date&lt;/b&gt;</displayName>
+		</SimpleField>
+		<SimpleField type="string" name="Project_Name">
+			<displayName>&lt;b&gt;Project Name&lt;/b&gt;</displayName>
+		</SimpleField>
+		<SimpleField type="string" name="Remarks">
+			<displayName>&lt;b&gt;Remarks&lt;/b&gt;</displayName>
+		</SimpleField>
+	</Schema>
+	<Style id="hlightPointStyle">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>Category</b></td><td>$[pbs_info/Category]</td></tr>
+  <tr><td><b>Name</b></td><td>$[pbs_info/Name]</td></tr>
+  <tr><td><b>PBS Name</b></td><td>$[pbs_info/PBS_Name]</td></tr>
+  <tr><td><b>Source Grid</b></td><td>$[pbs_info/Source_Grid]</td></tr>
+  <tr><td><b>Capacity (MVA)</b></td><td>$[pbs_info/Capacity__MVA_]</td></tr>
+  <tr><td><b>Peak Load (MW)</b></td><td>$[pbs_info/Peak_Load__MW_]</td></tr>
+  <tr><td><b>Voltage Level</b></td><td>$[pbs_info/Voltage_Level]</td></tr>
+  <tr><td><b>Status</b></td><td>$[pbs_info/Status]</td></tr>
+  <tr><td><b>Type</b></td><td>$[pbs_info/Type]</td></tr>
+  <tr><td><b>Longitude</b></td><td>$[pbs_info/Longitude]</td></tr>
+  <tr><td><b>Latitude</b></td><td>$[pbs_info/Latitude]</td></tr>
+  <tr><td><b>District</b></td><td>$[pbs_info/District]</td></tr>
+  <tr><td><b>Upazila</b></td><td>$[pbs_info/Upazila]</td></tr>
+  <tr><td><b>Address</b></td><td>$[pbs_info/Address]</td></tr>
+  <tr><td><b>Energized Date</b></td><td>$[pbs_info/Energized_Date]</td></tr>
+  <tr><td><b>Project Name</b></td><td>$[pbs_info/Project_Name]</td></tr>
+  <tr><td><b>Remarks</b></td><td>$[pbs_info/Remarks]</td></tr>
+</table>
+]]></text>
+		</BalloonStyle>
+	</Style>
+	<Style id="normPointStyle">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>Category</b></td><td>$[pbs_info/Category]</td></tr>
+  <tr><td><b>Name</b></td><td>$[pbs_info/Name]</td></tr>
+  <tr><td><b>PBS Name</b></td><td>$[pbs_info/PBS_Name]</td></tr>
+  <tr><td><b>Source Grid</b></td><td>$[pbs_info/Source_Grid]</td></tr>
+  <tr><td><b>Capacity (MVA)</b></td><td>$[pbs_info/Capacity__MVA_]</td></tr>
+  <tr><td><b>Peak Load (MW)</b></td><td>$[pbs_info/Peak_Load__MW_]</td></tr>
+  <tr><td><b>Voltage Level</b></td><td>$[pbs_info/Voltage_Level]</td></tr>
+  <tr><td><b>Status</b></td><td>$[pbs_info/Status]</td></tr>
+  <tr><td><b>Type</b></td><td>$[pbs_info/Type]</td></tr>
+  <tr><td><b>Longitude</b></td><td>$[pbs_info/Longitude]</td></tr>
+  <tr><td><b>Latitude</b></td><td>$[pbs_info/Latitude]</td></tr>
+  <tr><td><b>District</b></td><td>$[pbs_info/District]</td></tr>
+  <tr><td><b>Upazila</b></td><td>$[pbs_info/Upazila]</td></tr>
+  <tr><td><b>Address</b></td><td>$[pbs_info/Address]</td></tr>
+  <tr><td><b>Energized Date</b></td><td>$[pbs_info/Energized_Date]</td></tr>
+  <tr><td><b>Project Name</b></td><td>$[pbs_info/Project_Name]</td></tr>
+  <tr><td><b>Remarks</b></td><td>$[pbs_info/Remarks]</td></tr>
+</table>
+]]></text>
+		</BalloonStyle>
+	</Style>
+	<StyleMap id="pointStyleMap">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#normPointStyle</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hlightPointStyle</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder id="layer 0">
+		<name>pbs_info</name>
+		<visibility>0</visibility>
+		<open>1</open>
+		<Placemark>
+			<name>Bagmara Grid S/S</name>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_pbs_info_SSSSSSSSSDDSSSSSS">
+					<SimpleData name="Category">Grid Substation</SimpleData>
+					<SimpleData name="Name">Bagmara Grid S/S</SimpleData>
+					<SimpleData name="PBS_Name">-</SimpleData>
+					<SimpleData name="Source_Grid">-</SimpleData>
+					<SimpleData name="Capacity__MVA_">2x50/75</SimpleData>
+					<SimpleData name="Peak_Load__MW_">-</SimpleData>
+					<SimpleData name="Voltage_Level">132/33 kV</SimpleData>
+					<SimpleData name="Status">Under-Construction</SimpleData>
+					<SimpleData name="Type">AIS</SimpleData>
+					<SimpleData name="Longitude">88.8537</SimpleData>
+					<SimpleData name="Latitude">24.5999</SimpleData>
+					<SimpleData name="District">Rajshahi</SimpleData>
+					<SimpleData name="Upazila">Baghmara</SimpleData>
+					<SimpleData name="Address">-</SimpleData>
+					<SimpleData name="Energized_Date">-</SimpleData>
+					<SimpleData name="Project_Name">Power Grid Network Strengthening Project under PGCB</SimpleData>
+					<SimpleData name="Remarks">UC, Commision Year-2024</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>88.85369200000002,24.59990899999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Naogaon Grid S/S</name>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_pbs_info_SSSSSSSSSDDSSSSSS">
+					<SimpleData name="Category">Grid Substation</SimpleData>
+					<SimpleData name="Name">Naogaon Grid S/S</SimpleData>
+					<SimpleData name="PBS_Name">-</SimpleData>
+					<SimpleData name="Source_Grid">-</SimpleData>
+					<SimpleData name="Capacity__MVA_">2x50/75, 1x25/41</SimpleData>
+					<SimpleData name="Peak_Load__MW_">-</SimpleData>
+					<SimpleData name="Voltage_Level">132/33 KV</SimpleData>
+					<SimpleData name="Status">Existing</SimpleData>
+					<SimpleData name="Type">-</SimpleData>
+					<SimpleData name="Longitude">88.9639</SimpleData>
+					<SimpleData name="Latitude">24.8027</SimpleData>
+					<SimpleData name="District">Naogaon</SimpleData>
+					<SimpleData name="Upazila">Naogaon Sadar</SimpleData>
+					<SimpleData name="Address">-</SimpleData>
+					<SimpleData name="Energized_Date">-</SimpleData>
+					<SimpleData name="Project_Name">-</SimpleData>
+					<SimpleData name="Remarks">-</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>88.96387199999997,24.80267699999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>33 KV Switching Station</name>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_pbs_info_SSSSSSSSSDDSSSSSS">
+					<SimpleData name="Category">Switching Station</SimpleData>
+					<SimpleData name="Name">33 KV Switching Station</SimpleData>
+					<SimpleData name="PBS_Name">Naogaon PBS-1</SimpleData>
+					<SimpleData name="Source_Grid">-</SimpleData>
+					<SimpleData name="Capacity__MVA_">-</SimpleData>
+					<SimpleData name="Peak_Load__MW_">-</SimpleData>
+					<SimpleData name="Voltage_Level">33 kV</SimpleData>
+					<SimpleData name="Status">Existing</SimpleData>
+					<SimpleData name="Type">Switching Station</SimpleData>
+					<SimpleData name="Longitude">88.5836</SimpleData>
+					<SimpleData name="Latitude">24.8337</SimpleData>
+					<SimpleData name="District">Naogaon</SimpleData>
+					<SimpleData name="Upazila">-</SimpleData>
+					<SimpleData name="Address">Niamotpur, Naogaon.</SimpleData>
+					<SimpleData name="Energized_Date">-</SimpleData>
+					<SimpleData name="Project_Name">-</SimpleData>
+					<SimpleData name="Remarks">-</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>88.58359,24.83371000000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Atrai_2</name>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_pbs_info_SSSSSSSSSDDSSSSSS">
+					<SimpleData name="Category">33/11 kV Substation</SimpleData>
+					<SimpleData name="Name">Atrai_2</SimpleData>
+					<SimpleData name="PBS_Name">Naogaon PBS-1</SimpleData>
+					<SimpleData name="Source_Grid">Naogaon Grid</SimpleData>
+					<SimpleData name="Capacity__MVA_">10</SimpleData>
+					<SimpleData name="Peak_Load__MW_">5</SimpleData>
+					<SimpleData name="Voltage_Level">33/11 kV</SimpleData>
+					<SimpleData name="Status">Existing</SimpleData>
+					<SimpleData name="Type">Indoor</SimpleData>
+					<SimpleData name="Longitude">88.9773</SimpleData>
+					<SimpleData name="Latitude">24.6141</SimpleData>
+					<SimpleData name="District">Naogaon</SimpleData>
+					<SimpleData name="Upazila">Atrai</SimpleData>
+					<SimpleData name="Address">Vortetulia, Vopara,Atrai, Naogaon</SimpleData>
+					<SimpleData name="Energized_Date">2/4/2019</SimpleData>
+					<SimpleData name="Project_Name">-</SimpleData>
+					<SimpleData name="Remarks">-</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>88.97732999999998,24.61410000000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Atrai_1</name>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_pbs_info_SSSSSSSSSDDSSSSSS">
+					<SimpleData name="Category">33/11 kV Substation</SimpleData>
+					<SimpleData name="Name">Atrai_1</SimpleData>
+					<SimpleData name="PBS_Name">Naogaon PBS-1</SimpleData>
+					<SimpleData name="Source_Grid">Naogaon Grid</SimpleData>
+					<SimpleData name="Capacity__MVA_">10</SimpleData>
+					<SimpleData name="Peak_Load__MW_">6.5</SimpleData>
+					<SimpleData name="Voltage_Level">33/11 kV</SimpleData>
+					<SimpleData name="Status">Existing</SimpleData>
+					<SimpleData name="Type">Outdoor</SimpleData>
+					<SimpleData name="Longitude">88.978</SimpleData>
+					<SimpleData name="Latitude">24.6222</SimpleData>
+					<SimpleData name="District">Naogaon</SimpleData>
+					<SimpleData name="Upazila">Atrai</SimpleData>
+					<SimpleData name="Address">Vortetulia, Vopara,Atrai, Naogaon</SimpleData>
+					<SimpleData name="Energized_Date">10/9/2003</SimpleData>
+					<SimpleData name="Project_Name">-</SimpleData>
+					<SimpleData name="Remarks">-</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>88.97799500000001,24.62221099999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Naogaon-4</name>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_pbs_info_SSSSSSSSSDDSSSSSS">
+					<SimpleData name="Category">33/11 kV Substation</SimpleData>
+					<SimpleData name="Name">Naogaon-4</SimpleData>
+					<SimpleData name="PBS_Name">Naogaon PBS-1</SimpleData>
+					<SimpleData name="Source_Grid">Naogaon Grid</SimpleData>
+					<SimpleData name="Capacity__MVA_">10</SimpleData>
+					<SimpleData name="Peak_Load__MW_">0</SimpleData>
+					<SimpleData name="Voltage_Level">33/11 kV</SimpleData>
+					<SimpleData name="Status">Proposed</SimpleData>
+					<SimpleData name="Type">-</SimpleData>
+					<SimpleData name="Longitude">88.8566</SimpleData>
+					<SimpleData name="Latitude">24.6997</SimpleData>
+					<SimpleData name="District">Naogaon</SimpleData>
+					<SimpleData name="Upazila">Naogaon Sadar</SimpleData>
+					<SimpleData name="Address">Hapania,Hapania,Naogaon</SimpleData>
+					<SimpleData name="Energized_Date">-</SimpleData>
+					<SimpleData name="Project_Name">-</SimpleData>
+					<SimpleData name="Remarks">-</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>88.85658599999998,24.69968999999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Manda_2_Daluabari</name>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_pbs_info_SSSSSSSSSDDSSSSSS">
+					<SimpleData name="Category">33/11 kV Substation</SimpleData>
+					<SimpleData name="Name">Manda_2_Daluabari</SimpleData>
+					<SimpleData name="PBS_Name">Naogaon PBS-1</SimpleData>
+					<SimpleData name="Source_Grid">Niamatpur</SimpleData>
+					<SimpleData name="Capacity__MVA_">15</SimpleData>
+					<SimpleData name="Peak_Load__MW_">8</SimpleData>
+					<SimpleData name="Voltage_Level">33/11 kV</SimpleData>
+					<SimpleData name="Status">Existing</SimpleData>
+					<SimpleData name="Type">Outdoor</SimpleData>
+					<SimpleData name="Longitude">88.678</SimpleData>
+					<SimpleData name="Latitude">24.7162</SimpleData>
+					<SimpleData name="District">Naogaon</SimpleData>
+					<SimpleData name="Upazila">Manda</SimpleData>
+					<SimpleData name="Address">Kittoli (Deluabari), Kusumba, Manda, Naogaon</SimpleData>
+					<SimpleData name="Energized_Date">4/4/2014</SimpleData>
+					<SimpleData name="Project_Name">-</SimpleData>
+					<SimpleData name="Remarks">-</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>88.67797899999999,24.716154,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Raninagar_2</name>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_pbs_info_SSSSSSSSSDDSSSSSS">
+					<SimpleData name="Category">33/11 kV Substation</SimpleData>
+					<SimpleData name="Name">Raninagar_2</SimpleData>
+					<SimpleData name="PBS_Name">Naogaon PBS-1</SimpleData>
+					<SimpleData name="Source_Grid">Naogaon Grid</SimpleData>
+					<SimpleData name="Capacity__MVA_">10</SimpleData>
+					<SimpleData name="Peak_Load__MW_">7</SimpleData>
+					<SimpleData name="Voltage_Level">33/11 kV</SimpleData>
+					<SimpleData name="Status">Existing</SimpleData>
+					<SimpleData name="Type">Indoor</SimpleData>
+					<SimpleData name="Longitude">89.0791</SimpleData>
+					<SimpleData name="Latitude">24.715</SimpleData>
+					<SimpleData name="District">Naogaon</SimpleData>
+					<SimpleData name="Upazila">Raninagar</SimpleData>
+					<SimpleData name="Address">Abadpukur,Kaligram, Raninagar, Naogaon</SimpleData>
+					<SimpleData name="Energized_Date">16-02-2019</SimpleData>
+					<SimpleData name="Project_Name">-</SimpleData>
+					<SimpleData name="Remarks">-</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>89.07906000000001,24.71502000000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Manda-4</name>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_pbs_info_SSSSSSSSSDDSSSSSS">
+					<SimpleData name="Category">33/11 kV Substation</SimpleData>
+					<SimpleData name="Name">Manda-4</SimpleData>
+					<SimpleData name="PBS_Name">Naogaon PBS-1</SimpleData>
+					<SimpleData name="Source_Grid">Baghmara (UC) Grid</SimpleData>
+					<SimpleData name="Capacity__MVA_">10</SimpleData>
+					<SimpleData name="Peak_Load__MW_">0</SimpleData>
+					<SimpleData name="Voltage_Level">33/11 kV</SimpleData>
+					<SimpleData name="Status">Proposed</SimpleData>
+					<SimpleData name="Type">-</SimpleData>
+					<SimpleData name="Longitude">88.7434</SimpleData>
+					<SimpleData name="Latitude">24.7238</SimpleData>
+					<SimpleData name="District">Naogaon</SimpleData>
+					<SimpleData name="Upazila">Manda</SimpleData>
+					<SimpleData name="Address">Jotbazar,Nurullahbad,Manda, Naogaon</SimpleData>
+					<SimpleData name="Energized_Date">-</SimpleData>
+					<SimpleData name="Project_Name">-</SimpleData>
+					<SimpleData name="Remarks">-</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>88.74342100000003,24.723752,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Raninagar_1</name>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_pbs_info_SSSSSSSSSDDSSSSSS">
+					<SimpleData name="Category">33/11 kV Substation</SimpleData>
+					<SimpleData name="Name">Raninagar_1</SimpleData>
+					<SimpleData name="PBS_Name">Naogaon PBS-1</SimpleData>
+					<SimpleData name="Source_Grid">Naogaon Grid</SimpleData>
+					<SimpleData name="Capacity__MVA_">10</SimpleData>
+					<SimpleData name="Peak_Load__MW_">7.5</SimpleData>
+					<SimpleData name="Voltage_Level">33/11 kV</SimpleData>
+					<SimpleData name="Status">Existing</SimpleData>
+					<SimpleData name="Type">Outdoor</SimpleData>
+					<SimpleData name="Longitude">88.9545</SimpleData>
+					<SimpleData name="Latitude">24.7345</SimpleData>
+					<SimpleData name="District">Naogaon</SimpleData>
+					<SimpleData name="Upazila">Raninagar</SimpleData>
+					<SimpleData name="Address">Chalkmonu, Khattershar Raninagar,Raninagar, Naogaon</SimpleData>
+					<SimpleData name="Energized_Date">22-03-2010</SimpleData>
+					<SimpleData name="Project_Name">-</SimpleData>
+					<SimpleData name="Remarks">-</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>88.95451600000003,24.73449099999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>MAN3_Sotihat</name>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_pbs_info_SSSSSSSSSDDSSSSSS">
+					<SimpleData name="Category">33/11 kV Substation</SimpleData>
+					<SimpleData name="Name">MAN3_Sotihat</SimpleData>
+					<SimpleData name="PBS_Name">Naogaon PBS-1</SimpleData>
+					<SimpleData name="Source_Grid">Niamatpur</SimpleData>
+					<SimpleData name="Capacity__MVA_">10</SimpleData>
+					<SimpleData name="Peak_Load__MW_">0</SimpleData>
+					<SimpleData name="Voltage_Level">33/11 kV</SimpleData>
+					<SimpleData name="Status">Existing</SimpleData>
+					<SimpleData name="Type">Indoor</SimpleData>
+					<SimpleData name="Longitude">88.751</SimpleData>
+					<SimpleData name="Latitude">24.7989</SimpleData>
+					<SimpleData name="District">Naogaon</SimpleData>
+					<SimpleData name="Upazila">Manda</SimpleData>
+					<SimpleData name="Address">Sreerampur (Sotihat),Ganeshpur,Manda, Naogaon</SimpleData>
+					<SimpleData name="Energized_Date">-</SimpleData>
+					<SimpleData name="Project_Name">-</SimpleData>
+					<SimpleData name="Remarks">-</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>88.75098000000004,24.79893,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Manda_1</name>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_pbs_info_SSSSSSSSSDDSSSSSS">
+					<SimpleData name="Category">33/11 kV Substation</SimpleData>
+					<SimpleData name="Name">Manda_1</SimpleData>
+					<SimpleData name="PBS_Name">Naogaon PBS-1</SimpleData>
+					<SimpleData name="Source_Grid">Niamatpur</SimpleData>
+					<SimpleData name="Capacity__MVA_">20</SimpleData>
+					<SimpleData name="Peak_Load__MW_">14</SimpleData>
+					<SimpleData name="Voltage_Level">33/11 kV</SimpleData>
+					<SimpleData name="Status">Existing</SimpleData>
+					<SimpleData name="Type">Outdoor</SimpleData>
+					<SimpleData name="Longitude">88.7047</SimpleData>
+					<SimpleData name="Latitude">24.7562</SimpleData>
+					<SimpleData name="District">Naogaon</SimpleData>
+					<SimpleData name="Upazila">Manda</SimpleData>
+					<SimpleData name="Address">Barapoi,Kusumba, Manda, Naogaon</SimpleData>
+					<SimpleData name="Energized_Date">22-01-1992</SimpleData>
+					<SimpleData name="Project_Name">-</SimpleData>
+					<SimpleData name="Remarks">-</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>88.70472000000001,24.75619,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>NG3_Dubolhati</name>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_pbs_info_SSSSSSSSSDDSSSSSS">
+					<SimpleData name="Category">33/11 kV Substation</SimpleData>
+					<SimpleData name="Name">NG3_Dubolhati</SimpleData>
+					<SimpleData name="PBS_Name">Naogaon PBS-1</SimpleData>
+					<SimpleData name="Source_Grid">Naogaon Grid</SimpleData>
+					<SimpleData name="Capacity__MVA_">10</SimpleData>
+					<SimpleData name="Peak_Load__MW_">3.5</SimpleData>
+					<SimpleData name="Voltage_Level">33/11 kV</SimpleData>
+					<SimpleData name="Status">Existing</SimpleData>
+					<SimpleData name="Type">Indoor</SimpleData>
+					<SimpleData name="Longitude">88.8784</SimpleData>
+					<SimpleData name="Latitude">24.7796</SimpleData>
+					<SimpleData name="District">Naogaon</SimpleData>
+					<SimpleData name="Upazila">Naogaon Sadar</SimpleData>
+					<SimpleData name="Address">Chalkdarap,Shikarpur,,Dubolhati,Naogaon</SimpleData>
+					<SimpleData name="Energized_Date">8/4/2021</SimpleData>
+					<SimpleData name="Project_Name">-</SimpleData>
+					<SimpleData name="Remarks">-</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>88.87841000000003,24.77958000000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Niyamatpur_2</name>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_pbs_info_SSSSSSSSSDDSSSSSS">
+					<SimpleData name="Category">33/11 kV Substation</SimpleData>
+					<SimpleData name="Name">Niyamatpur_2</SimpleData>
+					<SimpleData name="PBS_Name">Naogaon PBS-1</SimpleData>
+					<SimpleData name="Source_Grid">Niamatpur</SimpleData>
+					<SimpleData name="Capacity__MVA_">20</SimpleData>
+					<SimpleData name="Peak_Load__MW_">11.5</SimpleData>
+					<SimpleData name="Voltage_Level">33/11 kV</SimpleData>
+					<SimpleData name="Status">Existing</SimpleData>
+					<SimpleData name="Type">Outdoor</SimpleData>
+					<SimpleData name="Longitude">88.5033</SimpleData>
+					<SimpleData name="Latitude">24.8072</SimpleData>
+					<SimpleData name="District">Naogaon</SimpleData>
+					<SimpleData name="Upazila">Niamotpur</SimpleData>
+					<SimpleData name="Address">Sultanpur,Paroil, Niamotpur, Naogaon</SimpleData>
+					<SimpleData name="Energized_Date">20-02-2013</SimpleData>
+					<SimpleData name="Project_Name">-</SimpleData>
+					<SimpleData name="Remarks">-</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>88.50327299999999,24.80724500000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Niyamatpur_1</name>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_pbs_info_SSSSSSSSSDDSSSSSS">
+					<SimpleData name="Category">33/11 kV Substation</SimpleData>
+					<SimpleData name="Name">Niyamatpur_1</SimpleData>
+					<SimpleData name="PBS_Name">Naogaon PBS-1</SimpleData>
+					<SimpleData name="Source_Grid">Niamatpur</SimpleData>
+					<SimpleData name="Capacity__MVA_">20</SimpleData>
+					<SimpleData name="Peak_Load__MW_">10</SimpleData>
+					<SimpleData name="Voltage_Level">33/11 kV</SimpleData>
+					<SimpleData name="Status">Existing</SimpleData>
+					<SimpleData name="Type">Outdoor</SimpleData>
+					<SimpleData name="Longitude">88.5858</SimpleData>
+					<SimpleData name="Latitude">24.8331</SimpleData>
+					<SimpleData name="District">Naogaon</SimpleData>
+					<SimpleData name="Upazila">Niamotpur</SimpleData>
+					<SimpleData name="Address">Korkoria,Niamotpur, Naogaon</SimpleData>
+					<SimpleData name="Energized_Date">22-01-1992</SimpleData>
+					<SimpleData name="Project_Name">-</SimpleData>
+					<SimpleData name="Remarks">-</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>88.58579299999995,24.833094,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>NG1_Sador</name>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_pbs_info_SSSSSSSSSDDSSSSSS">
+					<SimpleData name="Category">33/11 kV Substation</SimpleData>
+					<SimpleData name="Name">NG1_Sador</SimpleData>
+					<SimpleData name="PBS_Name">Naogaon PBS-1</SimpleData>
+					<SimpleData name="Source_Grid">Naogaon Grid</SimpleData>
+					<SimpleData name="Capacity__MVA_">20</SimpleData>
+					<SimpleData name="Peak_Load__MW_">8</SimpleData>
+					<SimpleData name="Voltage_Level">33/11 kV</SimpleData>
+					<SimpleData name="Status">Existing</SimpleData>
+					<SimpleData name="Type">Outdoor</SimpleData>
+					<SimpleData name="Longitude">88.914</SimpleData>
+					<SimpleData name="Latitude">24.8353</SimpleData>
+					<SimpleData name="District">Naogaon</SimpleData>
+					<SimpleData name="Upazila">Naogaon Sadar</SimpleData>
+					<SimpleData name="Address">Naogaon PBS-1, Chakbiram, Naogaon</SimpleData>
+					<SimpleData name="Energized_Date">19-04-1990</SimpleData>
+					<SimpleData name="Project_Name">-</SimpleData>
+					<SimpleData name="Remarks">-</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>88.91397999999998,24.83525799999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>MO2_Choumashia</name>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_pbs_info_SSSSSSSSSDDSSSSSS">
+					<SimpleData name="Category">33/11 kV Substation</SimpleData>
+					<SimpleData name="Name">MO2_Choumashia</SimpleData>
+					<SimpleData name="PBS_Name">Naogaon PBS-1</SimpleData>
+					<SimpleData name="Source_Grid">Naogaon Grid</SimpleData>
+					<SimpleData name="Capacity__MVA_">10</SimpleData>
+					<SimpleData name="Peak_Load__MW_">8</SimpleData>
+					<SimpleData name="Voltage_Level">33/11 kV</SimpleData>
+					<SimpleData name="Status">Existing</SimpleData>
+					<SimpleData name="Type">Indoor</SimpleData>
+					<SimpleData name="Longitude">88.8374</SimpleData>
+					<SimpleData name="Latitude">24.868</SimpleData>
+					<SimpleData name="District">Naogaon</SimpleData>
+					<SimpleData name="Upazila">Mohadebpur</SimpleData>
+					<SimpleData name="Address">Chowmashia,Cheragpur, Mohadebpur, Naogaon</SimpleData>
+					<SimpleData name="Energized_Date">26-11-2015</SimpleData>
+					<SimpleData name="Project_Name">-</SimpleData>
+					<SimpleData name="Remarks">-</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>88.83738,24.86801999999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>NG2_Hogolbari</name>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_pbs_info_SSSSSSSSSDDSSSSSS">
+					<SimpleData name="Category">33/11 kV Substation</SimpleData>
+					<SimpleData name="Name">NG2_Hogolbari</SimpleData>
+					<SimpleData name="PBS_Name">Naogaon PBS-1</SimpleData>
+					<SimpleData name="Source_Grid">Naogaon Grid</SimpleData>
+					<SimpleData name="Capacity__MVA_">10</SimpleData>
+					<SimpleData name="Peak_Load__MW_">3.5</SimpleData>
+					<SimpleData name="Voltage_Level">33/11 kV</SimpleData>
+					<SimpleData name="Status">Existing</SimpleData>
+					<SimpleData name="Type">Indoor</SimpleData>
+					<SimpleData name="Longitude">88.9444</SimpleData>
+					<SimpleData name="Latitude">24.8766</SimpleData>
+					<SimpleData name="District">Naogaon</SimpleData>
+					<SimpleData name="Upazila">Naogaon Sadar</SimpleData>
+					<SimpleData name="Address">Hogolbari, Boktarpur,Naogaon</SimpleData>
+					<SimpleData name="Energized_Date">28-12-2020</SimpleData>
+					<SimpleData name="Project_Name">-</SimpleData>
+					<SimpleData name="Remarks">-</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>88.94440800000002,24.876579,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>NIA3_Kapastia</name>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_pbs_info_SSSSSSSSSDDSSSSSS">
+					<SimpleData name="Category">33/11 kV Substation</SimpleData>
+					<SimpleData name="Name">NIA3_Kapastia</SimpleData>
+					<SimpleData name="PBS_Name">Naogaon PBS-1</SimpleData>
+					<SimpleData name="Source_Grid">Niamatpur</SimpleData>
+					<SimpleData name="Capacity__MVA_">10</SimpleData>
+					<SimpleData name="Peak_Load__MW_">3.5</SimpleData>
+					<SimpleData name="Voltage_Level">33/11 kV</SimpleData>
+					<SimpleData name="Status">Existing</SimpleData>
+					<SimpleData name="Type">Indoor</SimpleData>
+					<SimpleData name="Longitude">88.5392</SimpleData>
+					<SimpleData name="Latitude">24.9174</SimpleData>
+					<SimpleData name="District">Naogaon</SimpleData>
+					<SimpleData name="Upazila">Niamotpur</SimpleData>
+					<SimpleData name="Address">Hazinagar, Hazinagar, Niamotpur, Naogaon</SimpleData>
+					<SimpleData name="Energized_Date">7/4/2021</SimpleData>
+					<SimpleData name="Project_Name">-</SimpleData>
+					<SimpleData name="Remarks">-</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>88.53924000000002,24.91739000000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Badolgachi_SS</name>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_pbs_info_SSSSSSSSSDDSSSSSS">
+					<SimpleData name="Category">33/11 kV Substation</SimpleData>
+					<SimpleData name="Name">Badolgachi_SS</SimpleData>
+					<SimpleData name="PBS_Name">Naogaon PBS-1</SimpleData>
+					<SimpleData name="Source_Grid">Naogaon Grid</SimpleData>
+					<SimpleData name="Capacity__MVA_">15</SimpleData>
+					<SimpleData name="Peak_Load__MW_">10.5</SimpleData>
+					<SimpleData name="Voltage_Level">33/11 kV</SimpleData>
+					<SimpleData name="Status">Existing</SimpleData>
+					<SimpleData name="Type">Semi-Indoor</SimpleData>
+					<SimpleData name="Longitude">88.911</SimpleData>
+					<SimpleData name="Latitude">24.97</SimpleData>
+					<SimpleData name="District">Naogaon</SimpleData>
+					<SimpleData name="Upazila">Badolgachi</SimpleData>
+					<SimpleData name="Address">Senpara,Badolgachi, Naogaon</SimpleData>
+					<SimpleData name="Energized_Date">23-09-2002</SimpleData>
+					<SimpleData name="Project_Name">-</SimpleData>
+					<SimpleData name="Remarks">-</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>88.91101800000003,24.969961,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Badolgachi-2</name>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_pbs_info_SSSSSSSSSDDSSSSSS">
+					<SimpleData name="Category">33/11 kV Substation</SimpleData>
+					<SimpleData name="Name">Badolgachi-2</SimpleData>
+					<SimpleData name="PBS_Name">Naogaon PBS-1</SimpleData>
+					<SimpleData name="Source_Grid">Naogaon Grid</SimpleData>
+					<SimpleData name="Capacity__MVA_">10</SimpleData>
+					<SimpleData name="Peak_Load__MW_">0</SimpleData>
+					<SimpleData name="Voltage_Level">33/11 kV</SimpleData>
+					<SimpleData name="Status">Proposed</SimpleData>
+					<SimpleData name="Type">Indoor</SimpleData>
+					<SimpleData name="Longitude">88.9688</SimpleData>
+					<SimpleData name="Latitude">24.9688</SimpleData>
+					<SimpleData name="District">Naogaon</SimpleData>
+					<SimpleData name="Upazila">Badolgachi</SimpleData>
+					<SimpleData name="Address">Jagotnagor, Mithapur, Badolgachi, Naogaon</SimpleData>
+					<SimpleData name="Energized_Date">-</SimpleData>
+					<SimpleData name="Project_Name">-</SimpleData>
+					<SimpleData name="Remarks">-</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>88.96875000000001,24.96875000000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Niamotpur-4</name>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_pbs_info_SSSSSSSSSDDSSSSSS">
+					<SimpleData name="Category">33/11 kV Substation</SimpleData>
+					<SimpleData name="Name">Niamotpur-4</SimpleData>
+					<SimpleData name="PBS_Name">Naogaon PBS-1</SimpleData>
+					<SimpleData name="Source_Grid">Niamatpur</SimpleData>
+					<SimpleData name="Capacity__MVA_">10</SimpleData>
+					<SimpleData name="Peak_Load__MW_">0</SimpleData>
+					<SimpleData name="Voltage_Level">33/11 kV</SimpleData>
+					<SimpleData name="Status">Proposed</SimpleData>
+					<SimpleData name="Type">Indoor</SimpleData>
+					<SimpleData name="Longitude">88.5617</SimpleData>
+					<SimpleData name="Latitude">24.7393</SimpleData>
+					<SimpleData name="District">Naogaon</SimpleData>
+					<SimpleData name="Upazila">Niamotpur</SimpleData>
+					<SimpleData name="Address">Jarullapur, Bahadurpur, Niamotpur, Naogaon</SimpleData>
+					<SimpleData name="Energized_Date">-</SimpleData>
+					<SimpleData name="Project_Name">-</SimpleData>
+					<SimpleData name="Remarks">-</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>88.56174,24.73929000000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>AT3_Bandhaikhara</name>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_pbs_info_SSSSSSSSSDDSSSSSS">
+					<SimpleData name="Category">33/11 kV Substation</SimpleData>
+					<SimpleData name="Name">AT3_Bandhaikhara</SimpleData>
+					<SimpleData name="PBS_Name">Naogaon PBS-1</SimpleData>
+					<SimpleData name="Source_Grid">Naogaon Grid</SimpleData>
+					<SimpleData name="Capacity__MVA_">10</SimpleData>
+					<SimpleData name="Peak_Load__MW_">0</SimpleData>
+					<SimpleData name="Voltage_Level">33/11 kV</SimpleData>
+					<SimpleData name="Status">Existing</SimpleData>
+					<SimpleData name="Type">Indoor</SimpleData>
+					<SimpleData name="Longitude">88.8733</SimpleData>
+					<SimpleData name="Latitude">24.6879</SimpleData>
+					<SimpleData name="District">Naogaon</SimpleData>
+					<SimpleData name="Upazila">Atrai</SimpleData>
+					<SimpleData name="Address">Muskipur, Monihari, Atrai, Naogaon</SimpleData>
+					<SimpleData name="Energized_Date">-</SimpleData>
+					<SimpleData name="Project_Name">-</SimpleData>
+					<SimpleData name="Remarks">-</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>88.87326000000002,24.68792,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>
